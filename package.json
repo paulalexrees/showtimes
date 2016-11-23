@@ -2,9 +2,9 @@
   "name": "showtimes",
   "version": "1.0.0",
   "description": "cinema listings",
-  "main": "index.js",
+  "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/paulalexrees/showtimes/issues"
   },
-  "homepage": "https://github.com/paulalexrees/showtimes#readme"
+  "homepage": "https://github.com/paulalexrees/showtimes#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.1.2",
+    "request": "^2.79.0"
+  }
 }
