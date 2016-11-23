@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
 var http = require('http');
+var path = require('path');
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.sendFile(path.join(__dirname+'/index.html'));
 });
 
 module.exports = app;
